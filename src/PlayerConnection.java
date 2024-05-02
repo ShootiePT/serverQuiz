@@ -11,7 +11,6 @@ public class PlayerConnection implements Runnable {
     private PrintStream out;
     public boolean gameEnd = false;
     public int score;
-
     private boolean isPlayerReady;
 
     public boolean isPlayerReady() {
@@ -30,8 +29,6 @@ public class PlayerConnection implements Runnable {
     @Override
     public void run() {
 
-        //BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        //PrintWriter writer = new PrintWriter(clientSocket.getOutputStream(), true);
         try {
             setStreams();
             setName();

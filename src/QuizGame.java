@@ -10,12 +10,10 @@ public class QuizGame {
     private List<String> questions;
     private List<String> answers;
     private int currentQuestionIndex;
-
     //private final QuestionAnswer questionAnswer;
 
     public QuizGame(LinkedList<PlayerConnection> playerConnection) {
         this.playerConnections = playerConnection;
-
         // this.questionAnswer = questionAnswer;
     }
 
@@ -95,6 +93,7 @@ public class QuizGame {
             }
         }
 
+        //Announcing the winner
         if (!winners.isEmpty()) {
             if (winners.size() == 1) {
                 PlayerConnection winner = winners.get(0);
